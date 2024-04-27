@@ -23,7 +23,7 @@ void init_adc(){
     ADMUX |= (1<<MUX0) | (1<<MUX2)          // Aktivieren des ADCs für PINC5
     ADCSRA |= (1<<ADEN)                     //ADC Enable
     ADCSRA |= (1<<ADIE)                     //ADC Interrupt Enable
-    ADCSRA |= (1<<ADATE)                    //Immer, so schnell wie möglich triggern
+    ADCSRA |= (1<<ADATE)                    //Auto Trigger Enable
     ADCSRA |= (1<<ADPS0) | (1<<ADPS1) (1<<ADPS2)    //Prescaler setzen
     ADCSRA |= (1<<ADSC);                    //Messung starten
 }
