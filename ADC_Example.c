@@ -2,6 +2,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
+#include <util/atomic.h>
 
 /*
 The term 'Atomic Block' simply denotes that it cannot be interrupted. 
