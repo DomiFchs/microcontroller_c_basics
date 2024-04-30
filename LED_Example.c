@@ -19,7 +19,7 @@ int main() {
 
 void init_led(){
     DDRD |= (1 << PORTD5); // Set PD5 as output
-    PORTB &= ~(1 << PORTD5); //make sure the LED is off
+    PORTD &= ~(1 << PORTD5); //make sure the LED is off
 }
 
 void turn_on_led(){
